@@ -12,3 +12,12 @@ export const education = [
     period: "2017 – 2021",
   },
 ];
+
+export const certifications = [
+  {
+    name: "Java Full Stack Internship",
+    issuer: "Data Alcott Systems",
+    date: "30 July 2026",
+    id: "DAS-COMP-086/2026",
+  },
+];

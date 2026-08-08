@@ -1,7 +1,5 @@
 // Edit this file to add, remove, or update projects.
-// `image` paths point into /public/projects/. `github` links default to the
-// GitHub profile until each project's exact repository URL is confirmed —
-// update them once you have the real repo links to avoid dead project-specific URLs.
+// `image` paths point into /public/projects/.
 export const projects = [
   {
     slug: "hotel-booking",
@@ -21,7 +19,7 @@ export const projects = [
       "Admin dashboard",
       "Responsive interface",
     ],
-    github: "https://github.com/Maryan-123",
+    github: "https://github.com/Maryan-123/hotel-booking",
     demo: null,
     caseStudy: {
       overview:
@@ -59,7 +57,7 @@ export const projects = [
       "Finance snapshot (collections, expenses, unpaid fees)",
       "Role-based sign-in",
     ],
-    github: "https://github.com/Maryan-123",
+    github: "https://github.com/Maryan-123/Carta-primary-secondary-school",
     demo: null,
     caseStudy: {
       overview:

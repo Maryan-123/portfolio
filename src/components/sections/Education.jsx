@@ -1,11 +1,11 @@
-import { GraduationCap } from "lucide-react";
-import { education } from "../../data/education";
+import { GraduationCap, Award } from "lucide-react";
+import { education, certifications } from "../../data/education";
 import SectionHeader from "../ui/SectionHeader";
 
 export default function Education() {
   return (
     <section className="section-container py-24">
-      <SectionHeader number="07" label="EDUCATION" title="Education" />
+      <SectionHeader number="07" label="EDUCATION" title="Education & Certifications" />
 
       <div className="grid gap-6 sm:grid-cols-2">
         {education.map((edu) => (
@@ -26,6 +26,28 @@ export default function Education() {
           </div>
         ))}
       </div>
+
+      {certifications.length > 0 && (
+        <div className="mt-6 grid gap-6 sm:grid-cols-2">
+          {certifications.map((cert) => (
+            <div
+              key={cert.id}
+              className="flex gap-4 rounded-xl border border-border bg-card p-6"
+            >
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
+                <Award size={18} />
+              </div>
+              <div>
+                <p className="font-semibold text-text">{cert.name}</p>
+                <p className="mt-1 text-sm text-text-secondary">{cert.issuer}</p>
+                <p className="mt-2 text-xs text-text-muted">
+                  Issued {cert.date} · {cert.id}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   );
 }

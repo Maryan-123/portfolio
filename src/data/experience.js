@@ -2,16 +2,28 @@
 // internships or certifications as they happen.
 export const journey = [
   {
-    year: "2026",
-    title: "Building the Hotel Booking System",
+    year: "Jul 2026",
+    title: "Java Full Stack Internship — Data Alcott Systems",
     description:
-      "Designed and built a full-stack hotel reservation platform, covering both the customer booking flow and an admin dashboard.",
+      "Completed a remote Java Full Stack internship, gaining practical exposure to industry-oriented tasks and real-time learning. Certificate ID: DAS-COMP-086/2026.",
   },
   {
-    year: "2025",
-    title: "Learning Full-Stack Development",
+    year: "2026",
+    title: "Building Carta School & Stay Haven Hotel Booking",
     description:
-      "Focused on strengthening React, Node.js and database fundamentals through real, self-directed projects.",
+      "Designed and built two full-stack platforms: a school management system with a live admin dashboard, and a hotel reservation system with customer booking and admin flows.",
+  },
+  {
+    year: "2026",
+    title: "FreshBite — Frontend Web Development Internship Task",
+    description:
+      "Built a complete food-ordering experience — browsing, cart, checkout, order tracking — using only HTML, CSS and vanilla JavaScript as a frontend internship submission.",
+  },
+  {
+    year: "2022 – 2026",
+    title: "Software Engineering, Jamhuriya University",
+    description:
+      "Studied Software Engineering while building practical, self-directed projects like SyncFlow to apply concepts learned in coursework.",
   },
 ];
 
