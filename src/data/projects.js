@@ -117,7 +117,7 @@ export const projects = [
   },
   {
     slug: "freshbite",
-    featured: false,
+    featured: true,
     category: "Frontend Web Application",
     name: "FreshBite — Online Food Ordering",
     description:
