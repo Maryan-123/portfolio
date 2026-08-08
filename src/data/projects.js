@@ -115,6 +115,44 @@ export const projects = [
       ],
     },
   },
+  {
+    slug: "freshbite",
+    featured: false,
+    category: "Frontend Web Application",
+    name: "FreshBite — Online Food Ordering",
+    description:
+      "A full-featured, frontend-only food ordering platform built with vanilla HTML, CSS and JavaScript — restaurant browsing, cart, coupons, checkout and order tracking, all simulated client-side.",
+    image: "/projects/freshbite.png",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    features: [
+      "Restaurant listing with search, filters and sorting",
+      "Menu pages with dish customization and reviews",
+      "Cart with coupon codes and single-restaurant-per-order rule",
+      "Checkout with simulated payment (Cash, Card, Mobile)",
+      "5-stage simulated order tracking",
+      "Account dashboard: order history, wishlist, saved addresses",
+      "Dark mode, global search, and notification center",
+    ],
+    github: "https://github.com/Maryan-123/freshbite-food-ordering",
+    demo: "https://maryan-123.github.io/freshbite-food-ordering/",
+    caseStudy: {
+      overview:
+        "FreshBite is a frontend internship project simulating a complete food-ordering experience — browsing, cart, checkout and order tracking — entirely in the browser with no backend.",
+      problem:
+        "The task was to prove a full e-commerce food-ordering flow could be built with only HTML, CSS and vanilla JavaScript, with no frameworks or build tools.",
+      solution:
+        "Built every stage of the ordering journey — restaurant discovery, menu browsing, cart, coupons, checkout, simulated payment and 5-stage order tracking — using modular JavaScript files and `localStorage` for all persistence.",
+      challenges:
+        "Simulating stateful flows like authentication, payment outcomes and order tracking convincingly without any real backend or database.",
+      learned:
+        "Learned to structure a large vanilla-JS app into clean, single-responsibility modules (cart, auth, orders, reviews, etc.) the way a framework would otherwise organize for you.",
+      future: [
+        "Connect to a real backend and database",
+        "Real payment gateway integration",
+        "Live order tracking via WebSockets",
+      ],
+    },
+  },
 ];
 
 export const featuredProjects = projects.filter((p) => p.featured);
