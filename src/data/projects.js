@@ -80,36 +80,37 @@ export const projects = [
   {
     slug: "syncflow",
     featured: true,
-    category: "Project Management Tool",
+    category: "Full-Stack Application",
     name: "SyncFlow — Project Delivery Platform",
     description:
-      "A Trello-style project management platform for planning, execution, reporting and client communication in one collaborative workspace.",
+      "A real-time, Trello-style project management platform with drag-and-drop kanban boards, live collaboration and file attachments, for planning, execution and reporting in one workspace.",
     image: "/projects/syncflow.png",
-    tech: ["React", "Node.js", "Tailwind CSS"],
+    tech: ["React", "Node.js", "Express", "PostgreSQL", "Redis", "Socket.io"],
     features: [
-      "Project planning and execution boards",
-      "Client communication tools",
-      "Reporting dashboard",
-      "Real-time collaboration",
-      "Fast onboarding — no credit card required",
+      "Drag-and-drop kanban boards (dnd-kit)",
+      "Real-time collaboration via WebSockets (Socket.io + Redis)",
+      "JWT authentication",
+      "File attachments (AWS S3)",
+      "Reporting dashboard with charts",
+      "Rate limiting and hardened API security (Helmet)",
     ],
-    github: "https://github.com/Maryan-123",
+    github: "https://github.com/Maryan-123/task-management-system",
     demo: null,
     caseStudy: {
       overview:
-        "SyncFlow is a collaborative workspace for teams to plan, execute, report on and communicate about projects without the visual clutter of typical project management tools.",
+        "SyncFlow is a real-time project management platform inspired by tools like Trello, built to let teams plan, execute and report on projects together in one live workspace.",
       problem:
-        "Many project management tools bury teams in visual noise, splitting planning, reporting and client communication across too many disconnected views.",
+        "Many project management tools bury teams in visual noise, and few make real-time collaboration between team members feel truly instant.",
       solution:
-        "Designed a single, polished workspace centered on clarity — a clean landing experience leading into project boards, reporting and client-facing communication in one flow.",
+        "Built a full-stack app with a drag-and-drop kanban board on the frontend and an Express/PostgreSQL backend, using Socket.io with a Redis adapter to broadcast board changes to every connected client instantly.",
       challenges:
-        "Balancing feature depth (planning, execution, reporting, communication) against a genuinely uncluttered interface.",
+        "Keeping board state in sync across multiple connected clients in real time, and securing file uploads and the API surface (rate limiting, JWT auth, hardened headers) without slowing the app down.",
       learned:
-        "Focused on interface restraint — deciding what not to show is as important as the features themselves in a tool meant to reduce noise.",
+        "Learned to design a real-time architecture around WebSockets and a Redis adapter for horizontal scaling, and to structure a drag-and-drop UI backed by optimistic state updates.",
       future: [
-        "Kanban board with drag-and-drop",
         "Team roles and permissions",
         "Client-facing shared reports",
+        "Notifications and activity feed",
       ],
     },
   },
