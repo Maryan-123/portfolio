@@ -7,7 +7,7 @@ export const profile = {
   bio: "I design and build modern, responsive web applications focused on clean interfaces, reliable functionality, and excellent user experience.",
   about:
     "I'm a developer focused on building practical, modern and user-friendly digital products. I enjoy transforming ideas into responsive applications with clean interfaces and reliable functionality. I'm continuously improving my skills through real projects.",
-  photo: "/images/profile-large.jpg",
+  photo: "/images/profile-large.png",
   location: "Mogadishu, Somalia",
   email: "maryanhussein621@gmail.com",
   // International format, digits only (no +, spaces or dashes)
