@@ -26,7 +26,7 @@ export default function Hero() {
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.05] [background-image:linear-gradient(#0f172a_1px,transparent_1px),linear-gradient(90deg,#0f172a_1px,transparent_1px)] [background-size:48px_48px]"
+        className="pointer-events-none absolute inset-0 opacity-[0.05] [background-image:linear-gradient(var(--color-text)_1px,transparent_1px),linear-gradient(90deg,var(--color-text)_1px,transparent_1px)] [background-size:48px_48px]"
       />
 
       <div className="section-container relative grid gap-16 lg:grid-cols-2 lg:items-center">

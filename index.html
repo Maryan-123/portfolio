@@ -11,7 +11,7 @@
       name="description"
       content="Portfolio of Maryan Hussein Ulusow, a full-stack web developer building responsive and user-friendly web applications."
     />
-    <link rel="canonical" href="https://portofolio-dun-beta-63.vercel.app" />
+    <link rel="canonical" href="https://maryandev.vercel.app" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Maryan Hussein Ulusow | Full-Stack Web Developer" />
@@ -20,7 +20,7 @@
       content="Portfolio of Maryan Hussein Ulusow, a full-stack web developer building responsive and user-friendly web applications."
     />
     <meta property="og:image" content="/og-image.png" />
-    <meta property="og:url" content="https://portofolio-dun-beta-63.vercel.app" />
+    <meta property="og:url" content="https://maryandev.vercel.app" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Maryan Hussein Ulusow | Full-Stack Web Developer" />
@@ -38,6 +38,18 @@
     />
   </head>
   <body>
+    <script>
+      (function () {
+        var stored = localStorage.getItem("theme");
+        var theme =
+          stored === "dark" || stored === "light"
+            ? stored
+            : window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        if (theme === "dark") document.documentElement.classList.add("dark");
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
